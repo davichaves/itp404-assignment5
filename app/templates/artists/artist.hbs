@@ -1,12 +1,7 @@
 <h2>This Artist has {{model.length}} songs</h2>
 
 {{#each model as |song|}}
-  <div class="reddit">
-    <hr>
-    <p>Title: {{song.title}}</p>
-    <p>Price: {{song.price}}</p>
-    <p>playCount: {{song.playCount}}</p>
-  </div>
+  {{song-item song=song}}
 {{else}}
   <p>Nothing found.</p>
 {{/each}}

@@ -1,0 +1,10 @@
+<div class="reddit">
+  <hr>
+  <p>Title: {{song.title}}</p>
+  <p>Price: {{song.price}}</p>
+  <p>playCount: {{song.playCount}}</p>
+  {{#if songIsPopular}}
+    <img src="http://pix.iemoji.com/images/emoji/apple/ios-9/256/fire.png" height="42" width="42">
+  {{/if}}
+</div>
+{{yield}}
