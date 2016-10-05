@@ -5,7 +5,7 @@
 {{#if model}}
   {{#each model as |artist|}}
     <div class="reddit">
-      <p>ID: {{artist.id}} Name: {{#link-to "artists.artist" artist}}{{artist.name}}{{/link-to}}</p>
+      <p>ID: {{artist.id}} Name: {{#link-to "artists.artist" artist.id}}{{artist.name}}{{/link-to}}</p>
     </div>
   {{else}}
     <p>Nothing found.</p>
