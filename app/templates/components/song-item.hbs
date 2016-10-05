@@ -6,5 +6,10 @@
   {{#if songIsPopular}}
     <img src="http://pix.iemoji.com/images/emoji/apple/ios-9/256/fire.png" height="42" width="42">
   {{/if}}
+  {{#if songIsExpensive}}
+    <h4>$$</h4>
+  {{else}}
+    <h4>$</h4>
+  {{/if}}
 </div>
 {{yield}}
