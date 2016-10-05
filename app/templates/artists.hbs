@@ -1,3 +1,11 @@
-<h1>Artists</h1>
+<h1>List of Artists</h1>
+
+{{#each model as |artist|}}
+  <div class="reddit">
+    <p>ID: {{artist.id}} Name: {{artist.name}}</p>
+  </div>
+{{else}}
+  <p>Nothing found.</p>
+{{/each}}
 
 {{outlet}}
