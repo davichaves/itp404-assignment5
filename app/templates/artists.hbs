@@ -1,11 +1,15 @@
+{{outlet}}
+
 <h1>List of Artists</h1>
 
-{{#each model as |artist|}}
-  <div class="reddit">
-    <p>ID: {{artist.id}} Name: {{#link-to "artists.artist" artist}}{{artist.name}}{{/link-to}}</p>
-  </div>
+{{#if model}}
+  {{#each model as |artist|}}
+    <div class="reddit">
+      <p>ID: {{artist.id}} Name: {{#link-to "artists.artist" artist}}{{artist.name}}{{/link-to}}</p>
+    </div>
+  {{else}}
+    <p>Nothing found.</p>
+  {{/each}}
 {{else}}
-  <p>Nothing found.</p>
-{{/each}}
-
-{{outlet}}
+  <h1>Test</h1>
+{{/if}}
