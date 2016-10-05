@@ -4,7 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'itp404-assignment5',
     environment: environment,
-    rootURL: '',
+    rootURL: '/',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
